@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+#carcasa{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(203,19,107);
+    width: 322px;
+    height: 555px;
+    margin-top: 5%;
+    border-radius: 20px;
+    box-shadow:  8px 8px rgb(174, 17, 93);
+    }
+    #sombra-carcasa{
+        width: 285px;
+        height: 510px;
+        background-color: rgb(215,31,115);   
+        border-radius: 10px 10px 20px 20px;             
+    }
+        #espai-sombra-pantalla{
+            width: 285px;
+            height: 23px;
+        }
+        #pantalla{
+            width: 285px;
+            height: 264px;
+            background-color: rgb(26,26,26);   
+            border-radius: 20px;
+            display: flex;           
+        }
+            #power{
+                width: 49px;
+                height: 250px;
+            }
+                #espai-power{
+                    height: 85px;
+                }
+                #led-power{
+                    margin-left: 10px;
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 100%;
+                    background-color: rgb(255, 0, 34);
+                    box-shadow: 1px 1px 2px 2px rgb(255, 130, 147);
+                }
+                #p-power{
+                    margin-top: 7px;
+                    margin-left: 10px;
+                    font-size: 45%;
+                    color:rgb(225, 222, 222);
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            #pantalla2{
+                width: 189px;
+                height: 250px;
+            }
+                #espai-pantalla-lcd{
+                    width: 189px;
+                    height: 23px;
+                }
+                #lcd{
+                    width: 189px;
+                    height: 189px;
+                    /* background-color: rgb(31, 215, 190); */
+                    background-image: url(../img/3tr.gif);
+                    background-size: cover;
+                }
+                #logo-consola{                  
+                    display: flex;
+                    justify-content: center;
+                    
+                    font-size: 130%;                   
+                }
+                    #Game-Boy{
+                        margin-top: 10px;
+                        font-family: sans-serif;
+                        letter-spacing: -2.5px;
+                        color: grey;
+                    }
+                    #color{
+                        /* margin-top: 3px; */
+                        display: flex;
+                        margin-left: 7px;
+                        font-family:cursive;
+                        font-size: 120%;
+                        font-weight: bolder;
+                    }
+                        #c{
+                            color: red;
+                            margin-top: 3px;
+                        }
+                        #o{
+                            color: rgb(62, 62, 168);
+                            font-size: 28px;                                               
+                        }
+                        #l{
+                            transform: rotate(-11deg);
+                            color: rgb(36, 177, 8);
+                            margin-top: 3px;                            
+                        }
+                        #o2{
+                            color: yellowgreen;
+                            font-size: 28px;                          
+                        }
+                        #r{
+                            color: rgb(3, 139, 139);
+                            margin-top: 3px;
+                        }
+        #logo-nintendo{
+            width: 285px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+        }
+            #logo-nintendo-2{
+                margin-top: 5px;
+                font-size: 80%;
+                border: 3px rgb(203,19,107) solid;
+                font-family: "pretendo";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(194, 22, 105);
+                height: 20px;
+                width: 90px;
+                border-radius: 20px;             
+            }
+        #botons{
+            width: 285px;
+            height: 85px;
+            display: flex;
+        }
+            #caixa-1{
+                width: 95px;
+                height: 85px;
+                display: flex;
+            }
+                #espai-fletxes{
+                    width: 10px;
+                    height: 85px;
+                }
+                #fletxes-2{
+                    width: 85px;
+                    height: 85px;
+                    display: flex;                
+                }
+                    .col{
+                        width: 28.33px;
+                        height: 85px;
+                    }
+                        .mida{
+                            width: 28.33px;
+                            height: 28.33px;
+                            border-radius: 3px;
+                        }
+                            #pintar-1,#pintar-2,#pintar-3,#pintar-4,#pintar-5,#pintar-6{
+                                background-color: rgb(37,35,36);    
+                                box-shadow:  1.5px 1.5px 1.5px 1.5px rgb(25, 23, 24);                           
+                            }
+            #espai-fletxes-AB{
+                width: 95px;
+                height: 85px;         
+            }                
+            #AB{
+                width: 95px;
+                height: 85px;  
+                display: flex;       
+            }
+                #B{
+                    width: 47.5px;
+                    height: 85px;
+                }
+                    #espai-botó-B{
+                        height: 30px;
+                        
+                    }
+                        .botó-AB{
+                            height: 40px;
+                            width: 40px;
+                            background-color: rgb(37, 34, 36);
+                            border-radius: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 140%;
+                            box-shadow:  1.5px 1.5px 1.5px 1.5px rgb(25, 23, 24);
+                        }
+                #A{
+                    width: 47.5px;
+                    height: 85px;
+                }
+                    #espai-botó-A{
+                        height: 10px;
+                        
+                    }
+
+                    
+        #select-start-gran{
+            width: 285px;
+            height: 95px;
+            display: flex;
+        }
+            .select-start{
+                width: 95px;
+                height: 85px;
+            }
+                #espai-botó-start{
+                    height:40px;
+                }
+                #select-start-2{
+                    width: 95px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 70%;
+                }
+                    #select{
+                        width: 35px;
+                        height: 12.5px;
+                        background-color: rgb(37,35,36);
+                        border-radius: 10px;
+                        box-shadow:  1.5px 1.5px 1.5px 1.5px rgb(25, 23, 24);
+                    }
+                    #espai-select-start{
+                        width: 17.5px;
+                    }
+                    #start{
+                        width: 35px;
+                        height: 12.5px;
+                        background-color: rgb(37,35,36);
+                        border-radius: 10px;
+                        box-shadow:  1.5px 1.5px 1.5px 1.5px rgb(25, 23, 24);
+                    }
+                        .botó{
+                            margin-top: 20px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            color: rgb(200, 19, 107);
+                            font-weight: bolder;
+                            
+                        }
