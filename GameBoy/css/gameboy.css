@@ -28,7 +28,8 @@ body{
             height: 264px;
             background-color: rgb(26,26,26);   
             border-radius: 20px;
-            display: flex;           
+            display: flex;    
+            box-shadow: 2px 2px inset rgb(146, 14, 78);       
         }
             #power{
                 width: 49px;
@@ -54,7 +55,8 @@ body{
                 }
             #pantalla2{
                 width: 189px;
-                height: 250px;
+                height: 250px;            
+                
             }
                 #espai-pantalla-lcd{
                     width: 189px;
@@ -66,6 +68,7 @@ body{
                     /* background-color: rgb(31, 215, 190); */
                     background-image: url(../img/3tr.gif);
                     background-size: cover;
+                    box-shadow:  1px 1px inset rgb(93, 93, 93);
                 }
                 #logo-consola{                  
                     display: flex;
@@ -80,7 +83,6 @@ body{
                         color: grey;
                     }
                     #color{
-                        /* margin-top: 3px; */
                         display: flex;
                         margin-left: 7px;
                         font-family:cursive;
@@ -157,8 +159,28 @@ body{
                         }
                             #pintar-1,#pintar-2,#pintar-3,#pintar-4,#pintar-5,#pintar-6{
                                 background-color: rgb(37,35,36);    
-                                box-shadow:  1.5px 1.5px 1.5px 1.5px rgb(25, 23, 24);                           
+                                box-shadow:  1.5px 1.5px 1.5px 1.5px rgb(25, 23, 24);  
                             }
+                                #pintar-1{
+                                    
+                                    background-image: linear-gradient(to left, rgb(29, 28, 29) , rgb(52, 50, 52));
+                                }
+                                #pintar-2{
+                                    
+                                    background-image: linear-gradient(to top, rgb(29, 28, 29) , rgb(52, 50, 52));
+                                }
+                                #pintar-4{    
+                                    background-image: linear-gradient(to bottom, rgb(29, 28, 29) , rgb(52, 50, 52));
+                                }
+                                #pintar-5{
+                                    
+                                    background-image: linear-gradient(to right, rgb(29, 28, 29) , rgb(52, 50, 52));
+                                }
+                                #pintar-1:hover,#pintar-2:hover,#pintar-4:hover,#pintar-5:hover,#pintar-6:hover{        
+                                    background-image: linear-gradient(to top, rgb(29, 28, 29) , rgb(29, 28, 29));
+                                    box-shadow: none;
+
+                                    }
             #espai-fletxes-AB{
                 width: 95px;
                 height: 85px;         
@@ -179,7 +201,8 @@ body{
                         .botó-AB{
                             height: 40px;
                             width: 40px;
-                            background-color: rgb(37, 34, 36);
+                            /* background-color: rgb(37, 34, 36); */
+                            background-image: linear-gradient(to top, rgb(29, 28, 29) 60%, rgb(63, 63, 63));
                             border-radius: 100%;
                             display: flex;
                             align-items: center;
@@ -187,6 +210,13 @@ body{
                             font-family: Arial, Helvetica, sans-serif;
                             font-size: 140%;
                             box-shadow:  1.5px 1.5px 1.5px 1.5px rgb(25, 23, 24);
+                            text-shadow: 1px 1px 1px rgb(29, 28, 29), -0.5px -0.5px 0.5px #3e3e3e;
+                        }
+                        .botó-AB:hover{
+                            /* background-color: rgb(29, 28, 29); */
+                            background-image: linear-gradient(to top, rgb(29, 28, 29) , rgb(29, 28, 29));
+                            box-shadow: none;
+
                         }
                 #A{
                     width: 47.5px;
@@ -224,6 +254,10 @@ body{
                         border-radius: 10px;
                         box-shadow:  1.5px 1.5px 1.5px 1.5px rgb(25, 23, 24);
                     }
+                        #select:hover{
+                            background-color: rgb(38, 38, 38);
+                            box-shadow: none;
+                        }
                     #espai-select-start{
                         width: 17.5px;
                     }
@@ -233,11 +267,56 @@ body{
                         background-color: rgb(37,35,36);
                         border-radius: 10px;
                         box-shadow:  1.5px 1.5px 1.5px 1.5px rgb(25, 23, 24);
+                        
                     }
+                        #start:hover{
+                            background-color: rgb(38, 38, 38);
+                            box-shadow: none;
+                        }
                         .botó{
                             margin-top: 20px;
                             font-family: Arial, Helvetica, sans-serif;
                             color: rgb(200, 19, 107);
                             font-weight: bolder;
-                            
                         }
+            #rotar{
+                display: flex;
+                /* transform: rotate(-7deg); */
+            }
+                #espai-fil{
+                    width: 30px;
+                }
+                #espai-t{
+                    height: 29px;
+                }        
+                .files{
+                    height: 7.5px;
+                    display: flex;
+                    justify-content: center;
+                }
+                    .t,.n,.t-{
+                        height: 5px;
+                        width: 5px;
+                        border-radius: 100%;
+                        margin: 0.75px 0.75px 0.75px 0.75px;
+                    }
+                    .n-,.t-{
+                        height: 4.5px;
+                        width: 5px;
+                        border-radius: 100%;
+                        margin: 0.75px 0.75px 0.75px 0.75px;
+                    }
+                        .n-,.n{
+                            background-color: rgb(38, 38, 38);
+                        }            
+                        .t{
+                            background-color: rgb(189, 97, 141);
+                            border: 0.5px rgb(144, 18, 79) solid ;
+                            box-shadow:  1.5px 1.5px 1.5px 1.5px inset rgb(159, 43, 99);
+                        }
+                        .t-{
+                            background-color: rgb(189, 97, 141);
+                            border: 0.5px rgb(144, 18, 79) solid ;
+                            box-shadow:  1.5px 1.5px 1.5px 1.5px inset rgb(144, 18, 79);
+                        }
+                        
